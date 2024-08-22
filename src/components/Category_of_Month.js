@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Category_of_Month({catName,catImage}) {
+function CategoryOfMonth({catName,catImage}) {
   return (
     <div className="col-12 col-md-4 p-5 mt-3">
       <img src={catImage} className="rounded-circle img-fluid border" alt="Category" />
@@ -10,4 +10,4 @@ function Category_of_Month({catName,catImage}) {
     </div>
   )
 }
-export default Category_of_Month
+export default CategoryOfMonth

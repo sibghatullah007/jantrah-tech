@@ -85,7 +85,7 @@ function Header() {
             </div>
         </nav>
         {/* Header End */}
-    <div className="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div className="modal fade bg-white" id="templatemo_search" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-lg" role="document">
             <div className="w-100 pt-1 mb-5 text-right">
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
