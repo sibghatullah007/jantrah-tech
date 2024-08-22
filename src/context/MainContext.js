@@ -18,24 +18,24 @@ export const MainProvider = ({ children }) => {
     const category = [
         {
             id:"c1",
-            name:"First",
+            name:"Watches",
             image:category_img_01
         },
         {
             id:"c2",
-            name:"Second",
+            name:"Shoes",
             image:category_img_02
         },
         {
             id:"c3",
-            name:"Third",
+            name:"Accessories",
             image:category_img_03
         }
     ]
     const featureProd = [
         {
             id:"f1",
-            name:"First",
+            name:"Gym Weight",
             price:"250",
             ratings:2,
             reviews:19,
@@ -44,7 +44,7 @@ export const MainProvider = ({ children }) => {
         },
         {
             id:"f2",
-            name:"Second",
+            name:"Cloud Nike Shoes",
             price:"300",
             ratings:5,
             reviews:21,
@@ -53,7 +53,7 @@ export const MainProvider = ({ children }) => {
         },
         {
             id:"f3",
-            name:"Third",
+            name:"Summer Addides Shoes",
             price:"500",
             ratings:3,
             reviews:22,

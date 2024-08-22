@@ -22,10 +22,12 @@ import Cart from './pages/Cart'
 import Profile from './pages/Profile'
 import Test from './pages/Test'
 import View from './pages/View'
+import ViewCategory from './pages/ViewCategory.js'
 import NoPage from './pages/NoPage';
 
 // Import All Packages
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -41,11 +43,13 @@ function App() {
             <Route path="cart" element={<Cart />} />
             <Route path="profile" element={<Profile />} />
             <Route path="view" element={<View />} />
+            <Route path="viewCategory" element={<ViewCategory />} />
             <Route path="test" element={<Test />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
+          <Footer/>
       </MainProvider>
     </>
   );
