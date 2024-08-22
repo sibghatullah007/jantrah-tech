@@ -3,6 +3,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+// Import Context Provider
+import { MainProvider } from './context/MainContext';
 
 // Import All Relevant JS
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
@@ -18,6 +20,8 @@ import Shop from './pages/Shop'
 import Contact from './pages/Contact'
 import Cart from './pages/Cart'
 import Profile from './pages/Profile'
+import Test from './pages/Test'
+import View from './pages/View'
 import NoPage from './pages/NoPage';
 
 // Import All Packages
@@ -26,6 +30,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
+    <MainProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />}>
@@ -35,10 +40,13 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="cart" element={<Cart />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="view" element={<View />} />
+            <Route path="test" element={<Test />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
+      </MainProvider>
     </>
   );
 }
